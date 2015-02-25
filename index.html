@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Git Profiler</title>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body class="row">
+      <header class="page-header">
+        <!-- Header.. Logo and search form items  -->
+
+      <div class="row"> 
+      <div class="container">    
+          <div id="logo" class="col-sm-4">
+            <a href="index.html"><img src="images/Logo.png" class="img-responsive" alt="page logo"></a>
+          </div>
+          <div class="col-sm-4">
+          </div> 
+
+          <div class="col-sm-4" id="header_searchArea">
+            <form>
+              <input type="search" id="header_search_box" placeholder="Enter username here.." class="form-control">
+              <input type="button" id="header_search_button" value="Search" class="btn btn-primary">
+            </form>
+          </div>
+        </div>
+      </div>     
+      </header>
+
+      <div id="clear"></div>
+      <div id="intro_text" class="text-center">
+        <div id="search_area">          
+              <h2>Get the basic information of github users</h2>
+              <p>View projects directly in their repository.</p>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+            <form>
+              
+                <input type="text" id="search_box" placeholder="Enter username here.." class="form-control" ><br>
+                <input type="search" id="search_button" value="Search" class="btn btn-primary">
+            </form>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+
+      </div>
+
+      <!-- Resuls section -->
+
+
+<div>
+<div id="results" class="row" >
+<div class="container">
+    <div class="col-md-7">
+        <div class="profile-container">
+            <div class="profile-header row">
+                <div class="col-md-4 col-sm-12 text-center">
+                    <img src="images/bg4.jpg" alt="" class="header-avatar" id="user_avatar">
+                </div>
+                <div class="col-md-8 col-sm-12 profile-info">
+                    <div class="header-fullname" id="fullname"></div><br>
+                    <span class="header-information" id="username">
+                    </span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 profile-stats">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-6 stats-col">
+                            <div class="stats-value pink" id="numFllwd"></div>
+                            <div class="stats-title">FOLLOWING</div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 stats-col">
+                            <div class="stats-value pink" id="numFFlws"></div>
+                            <div class="stats-title">FOLLOWERS</div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 stats-col">
+                            <div class="stats-value pink" id="numRepos"></div>
+                            <div class="stats-title">REPOSITORIES</div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 stats-col">
+                            <div class="stats-value pink" id="numOrgs"></div>
+                            <div class="stats-title">COMPANIES</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="col-md-5">
+
+<div class="tab-content" >
+    <div class="tab-pane fade in active" id="home">
+      <h2>Repositories</h2>
+        <div class="list-group" id="reposList">
+        </div>
+
+        <h2>Organizations</h2>
+        <div class="list-group" id="listOrgs">
+        </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+        <div class="preloaderHolder container">
+          <h1 id="errMessage" class="alert alert-danger"> </h1>
+          <img src="images/pre.GIF" id="preloader" class="img-responsive" alt="preloader image">
+        </div>
+
+      </div>
+
+     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/app.js"></script>
+  </body>
+  </html>
